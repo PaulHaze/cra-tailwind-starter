@@ -6,13 +6,14 @@ import ReactDOM from 'react-dom';
 // import store from './redux/store';
 
 import './styles/main.scss';
-import { Home } from './views';
+import { AppRoutes } from './routes';
+// import { Home } from './views';
 // import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <Provider store={store}> */}
-    <Home />
+    <AppRoutes />
     {/* </Provider> */}
   </React.StrictMode>,
   document.getElementById('root'),
