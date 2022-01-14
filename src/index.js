@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import { BrowserRouter } from 'react-router-dom';
+
 //* ADD THESE FOR REDUX
 // import { Provider } from 'react-redux';
 // import store from './redux/store';
@@ -12,9 +14,11 @@ import { AppRoutes } from './routes';
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <Provider store={store}> */}
-    <AppRoutes />
-    {/* </Provider> */}
+    <BrowserRouter>
+      {/* <Provider store={store}> */}
+      <AppRoutes />
+      {/* </Provider> */}
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root'),
 );
