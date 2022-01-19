@@ -3,21 +3,15 @@ import ReactDOM from 'react-dom';
 
 import { BrowserRouter } from 'react-router-dom';
 
-//* ADD THESE FOR REDUX
-// import { Provider } from 'react-redux';
-// import store from './redux/store';
-
 import './styles/main.scss';
 import { AppRoutes } from './routes';
-// import { Home } from './views';
+
 // import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      {/* <Provider store={store}> */}
       <AppRoutes />
-      {/* </Provider> */}
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root'),
