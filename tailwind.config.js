@@ -23,6 +23,7 @@ module.exports = {
     },
     extend: {
       minWidth: {
+        ssm: '415px',
         sm: '640px',
         md: '768px',
         lg: '1024px',
@@ -30,6 +31,7 @@ module.exports = {
         '2xl': '1536px',
       },
       maxWidth: {
+        ssm: '415px',
         sm: '640px',
         md: '768px',
         lg: '1024px',
@@ -37,11 +39,12 @@ module.exports = {
         '2xl': '1536px',
       },
       spacing: {
-        sm: '8px',
-        md: '16px',
-        lg: '24px',
-        xl: '48px',
-        '2xl': '96px',
+        sm: '1rem',
+        md: '2rem',
+        lg: '4rem',
+        xl: '8rem',
+        '2xl': '16rem',
+        '4xl': '32rem',
       },
     },
   },
