@@ -3,7 +3,19 @@
     "ecmaVersion": 12
   },
   "plugins": ["prettier"],
-  "extends": ["airbnb", "plugin:prettier/recommended", "prettier"],
+  "extends": [
+    "airbnb",
+    "plugin:prettier/recommended",
+    "plugin:import/recommended",
+    "prettier"
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": ["node_modules", "src/"]
+      }
+    }
+  },
   "env": {
     "browser": true,
     "commonjs": true,
@@ -11,7 +23,7 @@
     "node": true
   },
   "rules": {
-    "import/extensions": ["error", "always", { "js": "never" }],
+    "import/extensions": ["error", "ignorePackages", { "js": "never" }],
     "import/no-unresolved": [0],
     "react/prop-types": [0],
     "no-param-reassign": [

@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import { AppRoutes } from 'routes';
 
-import 'styles/main.scss';
+import './styles/main.scss';
 
 // import reportWebVitals from './reportWebVitals';
 
