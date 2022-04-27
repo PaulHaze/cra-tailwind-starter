@@ -1,5 +1,3 @@
-import React from 'react';
-
 export function Home() {
   return (
     <div className="h-[100vh] bg-gradient-to-br from-teal-700/50 to-sky-500/50 flex items-center justify-center p-md">
