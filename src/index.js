@@ -1,9 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+// NAVIGATION
 import { BrowserRouter } from 'react-router-dom';
-
 import { AppRoutes } from 'routes';
+
+// REDUX
+import { Provider } from 'react-redux';
+import store from './redux/store';
 
 import './styles/main.scss';
 
@@ -11,9 +15,11 @@ import './styles/main.scss';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <AppRoutes />
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <AppRoutes />
+      </BrowserRouter>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root'),
 );
