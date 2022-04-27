@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom';
 
 import { BrowserRouter } from 'react-router-dom';
 
-import './styles/main.scss';
 import { AppRoutes } from './routes';
+
+import './styles/main.scss';
 
 // import reportWebVitals from './reportWebVitals';
 
